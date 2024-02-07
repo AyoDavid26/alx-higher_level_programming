@@ -11,7 +11,6 @@ class Square():
         """
         self.__size = size
 
-        
     @property
     def size(self):
         """property getter"""
