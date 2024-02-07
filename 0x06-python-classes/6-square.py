@@ -3,13 +3,14 @@
 """Defining a class square"""
 
 
-class Square:
+class Square():
     """Representing a square"""
 
-    def __init__(self, size):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializing new square
         where: size equals the size of the new square"""
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -23,6 +24,21 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
+    @property
+    def position(self):
+        """Private instance attribute: position"""
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """property setter def position(self, value): to set it"""
+        if (not isinstance(value, tuple) or
+            len(value) != 2 or
+            not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def area(self):
         """Public method to compute area of a class object"""
