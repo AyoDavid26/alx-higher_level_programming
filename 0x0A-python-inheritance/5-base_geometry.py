@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """A class defined with no arguments"""
     pass
