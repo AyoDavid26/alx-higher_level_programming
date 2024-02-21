@@ -3,7 +3,7 @@
 
 
 class MyList(list):
-    """Representing MyList"""
+    """Representing class MyList that takes base class as argument"""
     def print_sorted(self):
-        """Prints a sorted list"""
+        """Fucntion defination to Print a sorted list"""
         print(sorted(self))
