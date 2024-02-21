@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defining a class that inherited directly or 
+"""Defining a class that inherited directly or
 indirectly from another class"""
 
 
