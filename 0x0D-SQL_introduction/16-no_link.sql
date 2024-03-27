@@ -1,6 +1,6 @@
--- List all recordsof second_table in MYSQL server
--- All numbers are in descending order
-SELECT `score`, COUNT(*) AS `number`
+-- List all records of second_table in MYSQL server
+-- All records are in descending order
+SELECT `score`, `name`
 FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
+GROUP BY `name` != ""
+ORDER BY `score` DESC;
