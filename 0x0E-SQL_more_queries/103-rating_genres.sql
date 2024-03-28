@@ -1,6 +1,6 @@
 --Lists all genres in the database hbtn_0d_tvshows_rate by rating
 -- Results are sorted in descending order by rating
-SELECT `name`, SUM (`rate`) AS rating
+SELECT `name`, SUM (`rate`) AS `rating`
   FROM `tv_genres` AS g
        INNER JOIN `tv_show_genres` AS s
        ON s.`genre_id` = g.`id`
